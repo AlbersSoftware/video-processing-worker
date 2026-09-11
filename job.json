@@ -1,0 +1,9 @@
+{
+  "mediaId": "",
+  "processingJobId": "",
+  "processingGeneration": 1,
+  "sourceBucket": "",
+  "sourceStorageKey": "",
+  "derivedBucket": "",
+  "derivedStoragePrefix": ""
+}
