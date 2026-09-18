@@ -1,9 +1,9 @@
 {
-  "mediaId": "",
-  "processingJobId": "",
+  "mediaId": "ccd1cc59-6732-427c-9c41-a6e55e7fa426",
+  "processingJobId": "474af275-916b-42ab-a659-1d0294eb61f1",
   "processingGeneration": 1,
   "sourceBucket": "",
-  "sourceStorageKey": "",
+  "sourceStorageKey": "originals/collection/media/ccd1cc59-6732-427c-9c41-a6e55e7fa426/source.mp4",
   "derivedBucket": "",
-  "derivedStoragePrefix": ""
+  "derivedStoragePrefix": "derived/video/ccd1cc59-6732-427c-9c41-a6e55e7fa426/generation-1/"
 }

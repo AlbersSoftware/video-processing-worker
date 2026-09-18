@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated with https://github.com/shaka-project/shaka-packager version v3.9.3-0a8ba4f-release-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT2S" type="dynamic" publishTime="2026-09-17T19:25:23Z" availabilityStartTime="2026-09-17T19:25:23Z" minimumUpdatePeriod="PT5S" timeShiftBufferDepth="PT1800S">
+  <Period id="0" start="PT0S">
+    <AdaptationSet id="0" contentType="video" maxWidth="1920" maxHeight="1080" frameRate="15360/512" segmentAlignment="true" par="16:9">
+      <Representation id="0" bandwidth="4546377" codecs="avc1.640028" mimeType="video/mp4" sar="1:1" width="1920" height="1080">
+        <SegmentTemplate timescale="15360" initialization="video/1080p/init.mp4" media="video/1080p/$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="128000"/>
+            <S t="128000" d="25600"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+      <Representation id="1" bandwidth="2485771" codecs="avc1.64001f" mimeType="video/mp4" sar="1:1" width="1280" height="720">
+        <SegmentTemplate timescale="15360" initialization="video/720p/init.mp4" media="video/720p/$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="128000"/>
+            <S t="128000" d="25600"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+      <Representation id="2" bandwidth="1290880" codecs="avc1.64001f" mimeType="video/mp4" sar="1280:1281" width="854" height="480">
+        <SegmentTemplate timescale="15360" initialization="video/480p/init.mp4" media="video/480p/$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="128000"/>
+            <S t="128000" d="25600"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+      <Representation id="3" bandwidth="737508" codecs="avc1.64001e" mimeType="video/mp4" sar="1:1" width="640" height="360">
+        <SegmentTemplate timescale="15360" initialization="video/360p/init.mp4" media="video/360p/$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="128000"/>
+            <S t="128000" d="25600"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>

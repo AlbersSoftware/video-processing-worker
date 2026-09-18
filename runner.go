@@ -79,6 +79,24 @@ func runJob(
 		)
 	}
 
+	if len(plans) == 0 {
+
+		fmt.Printf(
+			"\nno video renditions needed for media %s; source short edge is %d\n",
+			job.MediaID,
+			min(
+				probeResult.DisplayWidth,
+				probeResult.DisplayHeight,
+			),
+		)
+
+		return model.VideoProcessingResult{
+			Successful: true,
+			Renditions: []model.VideoRenditionResult{},
+			Manifests:  []model.VideoManifestResult{},
+		}, nil
+	}
+
 	outputRoot := filepath.Join(
 		"output",
 		job.MediaID,
@@ -310,14 +328,14 @@ func buildProcessingResult(
 			ManifestType: "HLS",
 			StorageKey: buildDerivedStorageKey(
 				job.DerivedStoragePrefix,
-				"package/master.m3u8",
+				"master.m3u8",
 			),
 		},
 		{
 			ManifestType: "DASH",
 			StorageKey: buildDerivedStorageKey(
 				job.DerivedStoragePrefix,
-				"package/manifest.mpd",
+				"manifest.mpd",
 			),
 		},
 	}
